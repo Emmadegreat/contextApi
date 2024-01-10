@@ -1,8 +1,8 @@
 import './App.css'
 
+import { CountProvider } from './provider';
 //import Counter from './counter'
 import Counter from './count'
-import countProvider from './provider';
 
 //import { useState } from 'react'
 
@@ -10,12 +10,12 @@ function App() {
 
 
   return (
-    <countProvider>
+    <CountProvider>
       <div style={{margin:"auto"}}>
         <Counter/>
       </div>
 
-    </countProvider>
+    </CountProvider>
   )
 }
 
