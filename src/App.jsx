@@ -9,7 +9,7 @@ function App() {
 
   return (
     <CountProvider>
-      <div style={{margin:"auto"}}>
+      <div className="m-auto">
         <Counter/>
       </div>
 
