@@ -5,20 +5,20 @@ const countContext = createContext();
 const CountProvider = ({ children })=> {
     const [count, setCount] = useState(0);
 
-    const Increment = () => {
+    const increment = () => {
         setCount(count + 1);
     };
 
-    const Decrement = () => {
+    const decrement = () => {
         setCount(count - 1);
     }
 
-    const Reset = () =>{
+    const reset = () =>{
         setCount(0);
     }
 
     return (
-        <countContext.Provider value={{ count, Increment, Decrement, Reset }}>
+        <countContext.Provider value={{ count, increment, decrement, reset }}>
             {children}
         </countContext.Provider>
     );

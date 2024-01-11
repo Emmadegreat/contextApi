@@ -1,10 +1,8 @@
-import './App.css'
+import './index.css'
 
 import { CountProvider } from './provider';
 //import Counter from './counter'
 import Counter from './count'
-
-//import { useState } from 'react'
 
 function App() {
 
